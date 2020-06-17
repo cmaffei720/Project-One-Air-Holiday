@@ -1,0 +1,104 @@
+.h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    color: white;
+    text-shadow: 3px 3px green, 5.5px 5.5px red;
+
+}
+
+#holiday-text {
+
+    font-family: 'Monoton', cursive;
+    font-weight: bold;
+    color: red;
+    text-shadow: 3px 3px white, 5px 5px green;
+
+}
+
+.icon {
+    padding-left: 50px;
+    width: 225px;
+    height: 150px;
+    
+}
+
+.expanded:hover {
+    background-color: white;
+    color: darkblue;
+}
+
+.cell{
+    font-family:'Josefin Sans', sans-serif;
+    ;
+    ;
+
+}
+
+.card{
+    background-image: url(images/cardbackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px;
+    font-size: 30px;
+    color: red;
+    border-style: groove;
+    border-color: green;
+    border-width: 10px;
+    font-family: 'Audiowide', cursive;
+    text-shadow: 2px 2px black;
+
+}
+
+
+#reasults-container {
+    margin: 10px;
+    background-color: white;
+    width: 100%;
+    
+}
+
+body {
+    padding: 10px;
+    margin: 5px;
+    background-color: #ceeb;
+    background-image: url(images/winter.jpg);
+    background-position: unset;
+    background-size: unset;
+    background-repeat: no-repeat;
+}
+
+.callout {
+    background-image: url(images/snowfall.gif);
+    text-align: center;
+    background-color: hsl(196, 26%, 75%);
+    border-style: ridge;
+    border-width: 15px;
+    border-color: white;
+    background-size: cover;
+
+}
+
+.origin{
+    background-color: antiquewhite;
+    padding:8 px;
+}
+
+.holiday-container {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-style: groove;
+    border-width: 10px;
+    border-top-color: green;
+    border-left-color: red;
+    border-right-color: red;
+    border-bottom-color: green;
+
+}
+
+.flight-info {
+    padding: 10px;
+}

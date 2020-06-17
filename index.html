@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project SkyScanner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel = "stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');</style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap');</style>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Title of site-->
+    <div class="callout">
+        <h1 class = "h1" >AirHoliday<img src="images/santa.png" class="icon"></h1>
+        
+      </div>
+    
+     <!--Container/ Column for holiday list --> 
+      <div class="grid-x">
+        <div class="cell small-6 holiday-container">
+            <h2 id="holiday-text"></h2>
+    <!--Holiday year title-->
+            <script>
+            var holidayText = moment().format('YYYY [Holidays]');
+            var holidayTitle = $("#holiday-text");
+            holidayTitle.text(holidayText)
+            </script>
+        </div>
+       
+        <!--Container for user input forms-->
+        <div class="cell small-6 flight-info">
+
+        <div class="cell"><span class="label primary">Origin</span></div> 
+        <div class="cell"> 
+        <select class="dropdown menu" data-dropdown-menu id="originLocation"> 
+        <option value="" selected disabled hidden> 
+          Select an Option 
+      </option>
+    </select>
+        </div>
+                
+        <!--Dropdown menu for destination-->
+        <div class="cell"><span class="label primary">Destination</span></div> 
+        <div class="cell"> 
+        <select class="dropdown menu" data-dropdown-menu id="destinationLocation"> 
+          <option value="" selected disabled hidden> 
+          Select an Option 
+      </option>
+     </select>
+        </div>
+           
+            
+            <div class="cell"><span class="label primary">Departure</span><input id="departDate" placeholder="yyyy-mm-dd" type="date"></div>
+            <div class="cell"><span class="label primary">Return</span><input id="returnDate" placeholder="yyyy-mm-dd" type="date"></div>
+            <div class="cell"><br></div>
+            <div class="cell"><a class="button expanded" href="#" id="search">Search</a></div>
+        </div>
+      </div>
+      
+      <!--Container results will be pushed into-->
+      <div id="reasults-container">
+        
+      </div>
+
+      <!--Foundation-->
+      <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).foundation();
+    </script>    
+<script src="script.js"></script>
+</body>
+</html>
